@@ -1,5 +1,5 @@
 <?php 
-/* code by webdevtrick ( https://webdevtrick.com ) */
+
 session_start();
 $connect = mysqli_connect("localhost", "root", "", "cart");
 
@@ -56,7 +56,7 @@ if(isset($_GET["action"]))
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Shopping Cart In PHP and MySql | Webdevtrick.com</title>
+		<title>Shopping Cart</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -67,7 +67,7 @@ if(isset($_GET["action"]))
 			<br />
 			<br />
 			<br />
-			<h3 align="center">Shoping Cart With PHP And MySql | Source Code By <a href="https://webdevtrick.com">Webdevtrick.com</a></h3><br />
+			<h3 align="center">Shoping Cart With PHP And MySql</h3><br />
 			<br /><br />
 			<?php
 				$query = "SELECT * FROM tbl_product ORDER BY id ASC";
